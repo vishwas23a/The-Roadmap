@@ -1,0 +1,41 @@
+
+.icon img{
+        height: 50px;
+        margin-left: 30px;
+}
+
+.list ul{
+    display: flex;
+    margin-right: 40px ;
+    gap: 60px;
+    list-style: none;
+
+}
+.list ul li a{
+    color: rgb(62, 96, 169);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+.list ul li a:hover{
+    
+    text-decoration: underline;
+    
+}
+.Nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    background-image: url('./images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+.container{
+    box-shadow: 0px 0px 4px black;
+    position: sticky;
+}

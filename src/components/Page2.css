@@ -1,0 +1,694 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+.navbar2{
+    width: 100%;
+    height: 3%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(224, 217, 217, 0.774);
+    border-radius: 20px;
+    
+
+}
+.mainhead{
+    padding: 17px ;
+    margin: auto;    
+    font-size: 2.4rem;
+   
+}
+.mainhead a{
+    text-decoration: none;
+    font-family: 'Lobster Two', sans-serif;
+    background: -webkit-linear-gradient(#8f4212, #0ea4ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px  rgb(5, 5, 113);
+
+
+
+}
+
+.langhead1{
+    display: flex;
+    justify-content: start;
+    font-family: 'Nova Square', sans-serif;
+ position: relative;
+
+}
+.langhead1 h2{
+    
+    position: relative;
+    animation-name: langhead11;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+@keyframes langhead11{
+   0%{
+    top: 0px;
+    left: 0px;
+   }
+   100%{
+    top:0px;
+    left:910px;
+   }
+
+}
+.pagebody{
+    margin-top: 2px;
+    height:160vh;
+}
+.col1{
+    display: flex;
+    justify-content: space-around ;
+    height: 300px;
+    align-items: center;
+    background-color: rgba(224, 217, 217, 0.774);
+    border-radius: 20px;
+   
+}
+.sec1{
+    border-radius: 20px;
+    width: 15%;
+    height: 90%;
+    background-color: white;
+    
+   
+}
+.langlogo1{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.langlogo1 img{
+    height: 70%;
+    
+}
+.langlogo1 img:hover{
+    animation-name: logo1;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes logo1{
+    from{
+        width: 90px;
+        height: 90px;
+    }
+    to{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+
+.langname1{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+
+}
+.langbutton1 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    
+}
+.langbutton1 button {
+    background-color: rgba(32, 157, 220, 0.986);
+    color:white;
+    border-radius: 20px;
+    padding: auto;
+    width: 80px;
+    height: 35px;
+    align-items: center;
+    border: 1px solid rgba(32, 157, 220, 0.986);
+    font-size: 1.2rem;
+    
+}
+.langbutton1 button:hover {
+    background-color: white;
+    color:rgba(32, 157, 220, 0.986);
+   cursor: pointer;
+}
+.sec2{
+    width: 15%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+}
+.langlogo2{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.langlogo2 img{
+    height: 70%;
+    
+}
+.langlogo2 img:hover{
+    animation-name: logo2;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes logo2{
+    from{
+        width: 90px;
+        height: 90px;
+    }
+    to{
+        width: 130px;
+        height: 130px;
+    }
+}
+.langname2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+
+}
+.langbutton2 {
+    display: flex;
+    justify-content: center;
+}
+.langbutton2 button {
+    background-color: rgba(32, 157, 220, 0.986);
+    color:white;
+    padding: auto;
+    width: 80px;
+    height: 35px;
+    align-items: center;
+    border: 1px solid rgba(32, 157, 220, 0.986);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    
+}
+.langbutton2 button:hover {
+    background-color: white;
+    color:rgba(32, 157, 220, 0.986);
+   cursor: pointer;
+}
+.sec3{
+    width: 15%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+
+   
+}
+.langlogo3{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.langlogo3 img{
+    height: 70%;
+    padding: 20px;
+    
+}
+.langlogo3 img:hover{
+    animation-name: logo3;
+    animation-duration: 4s;
+    animation-direction:alternate;
+    animation-iteration-count:5 ;
+}
+@keyframes logo3{
+    from{
+        width: 90px;
+        height: 90px;
+    }
+    to{
+        width: 130px;
+        height: 130px;
+    }
+}
+.langname3{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+
+}
+.langbutton3 {
+    display: flex;
+    justify-content: center;
+}
+.langbutton3 button {
+    background-color: rgba(32, 157, 220, 0.986);
+    color:white;
+    padding: auto;
+    width: 80px;
+    height: 35px;
+    align-items: center;
+    border: 1px solid rgba(32, 157, 220, 0.986);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    
+}
+.langbutton3 button:hover {
+    background-color: white;
+    color:rgba(32, 157, 220, 0.986);
+   cursor: pointer;
+   border-radius: 20px;
+}
+
+.col2{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    margin-top: 5px;
+    align-items: center;
+    background-color: rgba(224, 217, 217, 0.774);
+    border-radius: 20px;
+
+
+}
+.sec4{
+    width: 15%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+
+
+}
+.langlogo4{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.langlogo4 img{
+    height: 70%;
+    
+}
+.langlogo4 img:hover{
+    animation-name: logo4;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes logo4{
+    from{
+        width: 90px;
+        height: 90px;
+    }
+    to{
+        width: 130px;
+        height: 130px;
+    }
+}
+.langname4{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+
+}
+.langbutton4 {
+    display: flex;
+    justify-content: center;
+}
+.langbutton4 button {
+    background-color: rgba(32, 157, 220, 0.986);
+    color:white;
+    padding: auto;
+    width: 80px;
+    height: 35px;
+    align-items: center;
+    border: 1px solid rgba(32, 157, 220, 0.986);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    
+}
+.langbutton4 button:hover {
+    background-color: white;
+    color:rgba(32, 157, 220, 0.986);
+   cursor: pointer;
+   
+}
+.sec5{
+    width: 15%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+
+
+}
+.langlogo5{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.langlogo5 img{
+    height: 70%;
+    
+}
+.langlogo5 img:hover{
+    animation-name: logo5;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes logo5{
+    from{
+        width: 90px;
+        height: 90px;
+    }
+    to{
+        width: 130px;
+        height: 130px;
+    }
+}
+.langname5{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+
+}
+.langbutton5 {
+    display: flex;
+    justify-content: center;
+}
+.langbutton5 button {
+    background-color: rgba(32, 157, 220, 0.986);
+    color:white;
+    padding: auto;
+    width: 80px;
+    height: 35px;
+    align-items: center;
+    border: 1px solid rgba(32, 157, 220, 0.986);
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+.langbutton5 button:hover {
+    background-color: white;
+    color:rgba(32, 157, 220, 0.986);
+   cursor: pointer;
+}
+.sec6{
+    width: 15%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.langlogo6{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.langlogo6 img{
+    height: 70%;
+   
+    
+}
+.langlogo6 img:hover{
+    animation-name: logo6;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes logo6{
+    from{
+        width: 90px;
+        height: 90px;
+    }
+    to{
+        width: 130px;
+        height: 130px;
+    }
+}
+.langname6{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+
+}
+.langbutton6 {
+    display: flex;
+    justify-content: center;
+}
+.langbutton6 button {
+    background-color: rgba(32, 157, 220, 0.986);
+    color:white;
+    padding: auto;
+    width: 80px;
+    height: 35px;
+    align-items: center;
+    border: 1px solid rgba(32, 157, 220, 0.986);
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+.langbutton6 button:hover {
+    background-color: white;
+    color:rgba(32, 157, 220, 0.986);
+   cursor: pointer;
+}
+.langhead2{
+    display: flex;
+    justify-content: start;
+    margin-left: 50px;
+    font-family: 'Nova Square', sans-serif;
+}
+.langhead2 h2{
+    position: relative;
+    animation-name: langhead11;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+@keyframes langhead11{
+   0%{
+    top: 0px;
+    left: 0px;
+   }
+   100%{
+    top:0px;
+    left:910px;
+   }
+
+}
+.col3{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    align-items: center;
+    background-color: rgba(224, 217, 217, 0.774);
+    border-radius: 20px;
+
+}
+.sec7{
+    width: 15%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.langlogo7{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.langlogo7 img{
+    height: 70%;
+    
+}
+.langlogo7 img:hover{
+    animation-name: logo7;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes logo7{
+    from{
+        width: 90px;
+        height: 90px;
+    }
+    to{
+        width: 130px;
+        height: 130px;
+    }
+}
+.langname7{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+
+}
+.langbutton7 {
+    display: flex;
+    justify-content: center;
+}
+.langbutton7 button {
+    background-color: rgba(32, 157, 220, 0.986);
+    color:white;
+    padding: auto;
+    width: 80px;
+    height: 35px;
+    align-items: center;
+    border: 1px solid rgba(32, 157, 220, 0.986);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    
+}
+.langbutton7 button:hover {
+    background-color: white;
+    color:rgba(32, 157, 220, 0.986);
+   cursor: pointer;
+}
+.sec8{
+    width: 15%;
+    height: 90%;
+border-radius: 20px;
+    background-color: white;
+
+}
+.langlogo8{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.langlogo8 img{
+    height: 70%;
+    
+}
+.langlogo8 img:hover{
+    animation-name: logo8;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes logo8{
+    from{
+        width: 90px;
+        height: 90px;
+    }
+    to{
+        width: 130px;
+        height: 130px;
+    }
+}
+.langname8{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+
+}
+.langbutton8{
+    display: flex;
+    justify-content: center;
+}
+.langbutton8 button {
+    background-color: rgba(32, 157, 220, 0.986);
+    color:white;
+    padding: auto;
+    width: 80px;
+    height: 35px;
+    align-items: center;
+    border: 1px solid rgba(32, 157, 220, 0.986);
+    font-size: 1.2rem;
+    border-radius:20px ;
+}
+.langbutton8 button:hover {
+    background-color: white;
+    color:rgba(32, 157, 220, 0.986);
+   cursor: pointer;
+}
+.sec9{
+    width: 15%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+
+
+}
+.langlogo9{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.langlogo9 img{
+    height: 70%;
+    
+}
+.langlogo9 img:hover{
+    animation-name: logo9;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes logo9{
+    from{
+        width: 90px;
+        height: 90px;
+    }
+    to{
+        width: 130px;
+        height: 130px;
+    }
+}
+.langname9{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+
+}
+.langbutton9 {
+    display: flex;
+    justify-content: center;
+}
+.langbutton9 button {
+    background-color: rgba(32, 157, 220, 0.986);
+    color:white;
+    padding: auto;
+    width: 80px;
+    height: 35px;
+    align-items: center;
+    border: 1px solid rgba(32, 157, 220, 0.986);
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+.langbutton9 button:hover {
+    background-color: white;
+    color:rgba(32, 157, 220, 0.986);
+   cursor: pointer;
+}
+
+

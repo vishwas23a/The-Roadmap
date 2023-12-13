@@ -1,0 +1,72 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+
+.background{
+    width: 100%;
+    height:565px;
+    background-image:  url('./images/back.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;    
+    
+}
+
+.body{
+    text-align: center;
+    margin: auto;
+    color: rgb(62, 96, 169);
+
+    text-shadow: 1px 1px 2px  black;
+
+
+}
+
+h5{
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+
+}
+.h4{
+    font-size: 2.0rem;
+    margin: auto;    
+}
+.body h1{
+    font-size: 9.0rem;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-family: 'Lobster Two', sans-serif;
+    background: -webkit-linear-gradient(#8f4212, #0ea4ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 8px  rgb(5, 5, 113);
+
+    
+}
+.button1{
+    padding: 30px;
+    border-radius: 30px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(62, 96, 169);
+    display: flex;
+    margin: 60px auto;
+    background-color: rgba(245, 245, 245, 0.655);
+    border: 1px solid rgb(128, 123, 112) ;
+
+}
+.button1:hover{
+ 
+    cursor: pointer;
+    background-color: white;
+
+}
+.button1 img {
+    
+    height: 30px;
+    margin-left: 5px;
+
+
+    
+}
