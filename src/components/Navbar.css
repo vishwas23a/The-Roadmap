@@ -21,6 +21,7 @@
 .list ul li a:hover{
     
     text-decoration: underline;
+    cursor: pointer;
     
 }
 .Nav{
