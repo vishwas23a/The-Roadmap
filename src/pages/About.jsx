@@ -1,11 +1,13 @@
 import React from 'react'
 import './About.css'
+import image3 from '../components/about.jpg'
+
 export default function About() {
   return (
     
     
         <div>
-           <div className="upperimage"> 
+           <div className="upperimage" style={{backgroundImage:`url(${image3})`}}> 
            <div className='headings'>
               <h3 className="shead">Who we are</h3>
               <h1 className="bhead"> Designer, Developers & Thinkers </h1>

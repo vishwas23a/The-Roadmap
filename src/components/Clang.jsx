@@ -1,7 +1,16 @@
 import React from 'react'
 
 import './Clang.css'
+import { saveAs } from 'file-saver'
 const Javapage = () => {
+
+ 
+    const downc=()=>{
+      let url="./images/JavaRoadmap.png"
+      saveAs(url,"C Roadmap");
+
+    }
+  
   return (
     <div>
       <div className="javahead"> <h1>C Language Roadmap</h1></div>
@@ -11,7 +20,7 @@ const Javapage = () => {
       </div>
 
       <div className='javabutton'>
-        <button> Download</button>
+        <button onClick={downc}> Download</button>
       </div>
       <div className='javalinks'> 
       <ul>

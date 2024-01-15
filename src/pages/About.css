@@ -1,7 +1,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .upperimage {
-  background-image: url("./images/about.jpg");
+  /* background-image: url("./images/about.jpg"); */
   height: 70vh;
   width: 100%;
   margin: auto;

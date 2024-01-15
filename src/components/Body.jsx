@@ -1,12 +1,13 @@
 import React from 'react'
 import './Body.css'
 import {useNavigate} from 'react-router-dom'
+import image1 from '../components/back.jpg'
 
 export default function Body() {
     const navigate =useNavigate()
   return (
     <div>
-    <div className='background'>
+    <div className='background' style={{ backgroundImage:`url(${image1})`}}>
     <div className='body'>
 
 <h5>Welcome To</h5>

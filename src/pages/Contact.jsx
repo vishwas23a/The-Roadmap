@@ -1,9 +1,9 @@
 import React from 'react'
 import './Contact.css'
-
+import image4 from '../components/back2.jpg'
 export default function Contact() {
   return (
-    <div className='container'>
+    <div className='container' style={{backgroundImage:`url(${image4})`}}>
 
       <div className='form'>
       <h1 className='contact'>Contact Us</h1>
