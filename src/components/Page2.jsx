@@ -1,13 +1,22 @@
 import React from "react";
 import "./Page2.css";
-
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Page2() {
+  const [theme,setTheme]=useState("light");
+  const fun=()=>{
+    setTheme(theme==="light"?"dark":"light");
+  }
   const navigate = useNavigate();
   return (
-    <div>
+    <div className={theme==="light"?"light-theme":"dark-theme"}>
       <div className="navbar2">
+      <label className="switch">
+  <input type="checkbox" onClick={fun} />
+  <span className="slider"></span>
+</label>
+
       <h2 className="mainhead">  <a href="/">The Roadmap</a> </h2>
       </div>
 
