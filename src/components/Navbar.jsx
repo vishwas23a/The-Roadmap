@@ -1,29 +1,30 @@
 import React from 'react'
-import './Navbar.css'
-import image1 from '../components/back.jpg'
-import { useNavigate } from 'react-router-dom'
+
+import navLogo from '/images/eco-light.png'
+import { NavLink} from 'react-router-dom'
 
 export default function Navbar() {
-  const Navigate=useNavigate();
+
   return (
-    <div className='container'>
-
-        <div className='Nav' style={{ backgroundImage:`url(${image1})`}}>
-            <div className='icon'>
-            <img src="./images/icon.png" alt="logo" />
-            </div>
-                <div className='list'>
-                <ul>
-                    <li><a onClick={()=> Navigate('About')}>About</a></li>
-                    <li><a  onClick={()=> Navigate('Contact')}>Contact</a> </li>
-                </ul>
-
-                </div>
-
-        </div>
+    <div >
+      
+      <div class=" flex h-16 items-center bg-white justify-between text-zinc-700 shadow-zinc-700 shadow-lg   w-full px-10 rounded-lg">
+    <div class="flex items-center">
+        <img class="h-10 w-10" src={navLogo} alt=""/>
+        The Roadmap
+    </div>
+    <nav>
+        <ul class="flex gap-14 cursor-pointer    ">
+          <NavLink to="/ "> <li class="hover:text-zinc-950 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 ">Home </li></NavLink> 
+          <NavLink to="/Page2"> <li class="hover:text-zinc-950 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 ">Roadmaps </li></NavLink> 
+          <NavLink to="/About">    <li class="hover:text-zinc-950 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110">About</li></NavLink>
+          <NavLink to="/Contact">     <li class="hover:text-zinc-950 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110">Feedback</li></NavLink>
+        </ul>
+    </nav>
+  </div>
+    </div>
       
 
 
-    </div>
   )
 }

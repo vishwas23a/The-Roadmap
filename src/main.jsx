@@ -21,19 +21,30 @@ import Csharp from './components/Csharp.jsx'
 import Reactjs from './components/Reactjs.jsx'
 import Reactnative from './components/Reactnative.jsx'
 import Flutter from './components/Flutter.jsx'
+import Navbar from './components/Navbar.jsx'
+import Body from './components/Body.jsx'
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App/>,
+    
+      path:"/",
+      element:<Body/>,
   },
-  {
-    path: "About",
-    element: <About/>,
-  },
-  {
-    path: "Contact",
-    element: <Contact/>,
-  },
+        {
+      
+          path: "About",
+          element: <About/>,
+        },
+        {
+          path: "Contact",
+          element: <Contact/>,
+        },
+      
+      
+  
+    
+     
+  
+
   {
     path: "Page2",
     element: <Page2/>,
