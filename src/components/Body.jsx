@@ -8,7 +8,7 @@ export default function Body() {
   return (
     <div>
       <div class="flex justify-center h-screen w-screen  items-center">
-        <img class=" h-screen w-screen absolute" src={image1} alt="" />
+        <img class=" h-screen w-screen absolute" src={image1} alt="" loading='lazy' />
         <div class="h-4/5  w-11/12 bg-slate-50  border border-white bg-opacity-15 rounded-2xl z-10"> 
         <div class=" px-8 mt-2 text-white flex justify-between  ">
         <div>

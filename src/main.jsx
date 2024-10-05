@@ -23,6 +23,7 @@ import Reactnative from './components/Reactnative.jsx'
 import Flutter from './components/Flutter.jsx'
 import Navbar from './components/Navbar.jsx'
 import Body from './components/Body.jsx'
+import Angular from './components/Angular.jsx'
 const router = createBrowserRouter([
   {
     
@@ -84,6 +85,10 @@ const router = createBrowserRouter([
   {
     path: "Flutter",
     element: <Flutter/>,
+  },
+  {
+    path: "Angular",
+    element: <Angular/>,
   },
  
 ]);

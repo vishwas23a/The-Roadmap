@@ -1,138 +1,113 @@
 import React from "react";
 import "./Page2.css";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import cThumb from "/images/c.png"
+import csharpThumb from "/images/csharp.png"
+import cPlusThumb from "/images/cplus.png"
+import javaThumb from "/images/java.png"
+import pythonThumb from "/images/python.png"
+import javascriptThumb from "/images/javascript.png"
+import flutterThumb from "/images/flutter.png"
+import reactThumb from "/images/react.png"
+import reactnativeThumb from "/images/reactnative.png"
+import angularThumb from "/images/angular.png"
 import Navbar from "./Navbar";
+import Card from "./Card";
 
-export default function Page2() {  const navigate = useNavigate();
+export default function Page2() {
+  const [show, setShow]=useState(true)
+
   return (
     <div >
       <Navbar/>
       <div className=" w-screen   flex justify-around mt-5 font-bold text-2xl text-slate-800">
-    <h1 className="cursor-pointer hover:shadow-xl p-4   rounded-2xl   "> Languages </h1>
-    <h1> Frameworks</h1>
+    <h1 className="cursor-pointer hover:shadow-xl p-3   rounded-2xl   " onClick={()=>setShow(true)}> Languages </h1>
+    <h1 className="text-4xl font-semibold">|</h1>
+    <h1 className="cursor-pointer hover:shadow-xl p-3   rounded-2xl   " onClick={()=>setShow(false)}> Frameworks</h1>
 
       </div>
+      {
+        show===true?
+        <div className="w-screen h-max justify-evenly  p-8 mt-8 gap-20 flex flex-wrap">
 
-      <div className="langhead1">
-        <h2> Programming Language</h2>
-      </div>
+        <Card
+         Heading="C language"
+         message="Learn About C Language "
+         thumbnail={cThumb}
+         Go="/Clang"
+          />
+        <Card
+         Heading="C++"
+         message="Learn About C++ Language "
+         thumbnail={cPlusThumb}
+         Go="/Cplus"
+          />
+        <Card
+         Heading="Java"
+         message="Learn About Java Language "
+         thumbnail={javaThumb}
+         Go="/Javapage"
+          />
+        <Card
+         Heading="Python"
+         message="Learn About Python Language "
+         thumbnail={pythonThumb}
+         Go="/Python"
+          />
+        <Card
+         Heading="Javascript"
+         message="Learn About Javascript Language "
+         thumbnail={javascriptThumb}
+         Go="/Javascript"
+          />
+        <Card
+         Heading="C Sharp"
+         message="Learn About C Sharp Language "
+         thumbnail={csharpThumb}
+         Go="/Csharp"
+          />
 
-      <div className="pagebody">
-        <div className="col1">
-          <div className="sec1">
-            <div className="langlogo1">
-              <img src="./images/java.png" alt="logoo1" />
-            </div>
-            <div className="langname1">
-              <h3>Java</h3>
-            </div>
-            <div className="langbutton1">
-              <button onClick={() => navigate("/javapage")}> Find</button>
-            </div>
-          </div>
-          <div className="sec2">
-            <div className="langlogo2">
-              <img src="./images/c.png" alt="logoo1" />
-            </div>
-            <div className="langname2">
-              <h3>C Language </h3>
-            </div>
-            <div className="langbutton2">
-              <button onClick={()=>navigate("/Clang")}> Find</button>
-            </div>
-          </div>
 
-          <div className="sec3">
-            <div className="langlogo3">
-              <img src="./images/cplus.png" alt="logoo1" />
-            </div>
-            <div className="langname3">
-              <h3> C++ </h3>
-            </div>
-            <div className="langbutton3">
-              <button onClick={()=> navigate("/Cplus")}> Find</button>
-            </div>
-          </div>
+
+
+
+        </div>: 
+        <div className="w-screen h-max justify-evenly  p-8 mt-8 gap-20 flex flex-wrap">
+
+<Card
+         Heading="Flutter"
+         message="Learn About Flutter Framework"
+         thumbnail={flutterThumb}
+         Go="/Flutter"
+          />
+<Card
+         Heading="React"
+         message="Learn About React Framework "
+         thumbnail={reactThumb}
+         Go="/Reactjs"
+          />
+<Card
+         Heading="React Native"
+         message="Learn About React Native "
+         thumbnail={reactnativeThumb}
+         Go="/Reactnative"
+          />
+<Card
+         Heading="Angular"
+         message="Learn About Angular Framework"
+         thumbnail={angularThumb}
+         Go="/Angular"
+          />
+
+
+
         </div>
-        <div className="col2">
-          <div className="sec4">
-            <div className="langlogo4">
-              <img src="./images/python.png" alt="logoo1" />
-            </div>
-            <div className="langname4">
-              <h3>Python</h3>
-            </div>
-            <div className="langbutton4">
-              <button onClick={()=> navigate("/Python")}>  Find</button>
-            </div>
-          </div>
-          <div className="sec5">
-            <div className="langlogo5">
-              <img src="./images/javascript.png" alt="logoo1" />
-            </div>
-            <div className="langname5">
-              <h3> Java Script</h3>
-            </div>
-            <div className="langbutton5">
-              <button onClick={()=> navigate("/Javascript")}> Find</button>
-            </div>
-          </div>
+             }
 
-          <div className="sec6">
-            <div className="langlogo6">
-              <img src="./images/csharp.png" alt="logoo1" />
-            </div>
-            <div className="langname6">
-              <h3> C# </h3>
-            </div>
-            <div className="langbutton6">
-              <button onClick={()=> navigate("/Csharp")}> Find</button>
-            </div>
-          </div>
-        </div>
-        <div className="langhead2">
-          
-          <h2> Frameworks</h2>
-        </div>
 
-        <div className="col3">
-          <div className="sec7">
-            <div className="langlogo7">
-              <img src="./images/react.png" alt="logoo1" />
-            </div>
-            <div className="langname7">
-              <h3>React Js</h3>
-            </div>
-            <div className="langbutton7">
-              <button onClick={()=> navigate("/Reactjs")}> Find</button>
-            </div>
-          </div>
-          <div className="sec8">
-            <div className="langlogo8">
-              <img src="./images/reactnative.png" alt="logoo1" />
-            </div>
-            <div className="langname8">
-              <h3> React Native</h3>
-            </div>
-            <div className="langbutton8">
-              <button onClick={()=> navigate("/Reactnative")}> Find</button>
-            </div>
-          </div>
+     
 
-          <div className="sec9">
-            <div className="langlogo9">
-              <img src="./images/flutter.png" alt="logoo1" />
-            </div>
-            <div className="langname9">
-              <h3> Flutter </h3>
-            </div>
-            <div className="langbutton9">
-              <button onClick={()=> navigate("/Flutter")}> Find</button>
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </div>
   );
 }
