@@ -1,6 +1,6 @@
 import React from 'react'
 
-import image3 from '../components/About.jpg'
+import image3 from '/images/About.jpg'
 import Navbar from '../components/Navbar'
 
 export default function About() {
