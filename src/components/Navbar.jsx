@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <div >
       
-      <div class=" flex h-16 items-center bg-white justify-between text-zinc-700 shadow-zinc-700 shadow-lg   w-full px-10 rounded-lg">
+      <div class=" flex h-max items-center bg-white justify-between text-zinc-700 shadow-zinc-700 shadow-lg  w-full flex-wrap  px-10 gap-5 py-3 rounded-lg">
     <div class="flex items-center">
         <img class="h-10 w-10" src={navLogo} alt=""/>
         The Roadmap

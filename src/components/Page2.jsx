@@ -18,9 +18,9 @@ export default function Page2() {
   const [show, setShow]=useState(true)
 
   return (
-    <div >
-      <Navbar/>
-      <div className=" w-screen   flex justify-around mt-5 font-bold text-2xl text-slate-800">
+    <div  >
+      <div className=""><Navbar/></div>
+      <div className=" w-full flex justify-around mt-5 font-bold text-2xl text-slate-800">
     <h1 className="cursor-pointer hover:shadow-xl p-3   rounded-2xl   " onClick={()=>setShow(true)}> Languages </h1>
     <h1 className="text-4xl font-semibold">|</h1>
     <h1 className="cursor-pointer hover:shadow-xl p-3   rounded-2xl   " onClick={()=>setShow(false)}> Frameworks</h1>
@@ -28,7 +28,7 @@ export default function Page2() {
       </div>
       {
         show===true?
-        <div className="w-screen h-max justify-evenly  p-8 mt-8 gap-20 flex flex-wrap">
+        <div className="w-full h-max justify-evenly  p-8 mt-8 gap-20 flex flex-wrap">
 
         <Card
          Heading="C language"
@@ -72,7 +72,7 @@ export default function Page2() {
 
 
         </div>: 
-        <div className="w-screen h-max justify-evenly  p-8 mt-8 gap-20 flex flex-wrap">
+        <div className="w-full h-max justify-evenly  p-8 mt-8 gap-20 flex flex-wrap">
 
 <Card
          Heading="Flutter"

@@ -8,10 +8,10 @@ export default function About() {
     
     
         <div>
-           <div className='fixed w-screen'><Navbar/></div> 
+           <div className='fixed w-full'><Navbar/></div> 
          
-            <img className='fixed -z-10  opacity-80 w-screen' src={image3} alt="" loading='lazy' /> 
-            <div className=" overflow-auto h-max w-screen   ">
+            <img className='fixed  -z-10  opacity-80 w-screen' src={image3} alt="" loading='lazy' /> 
+            <div className=" overflow-auto h-max w-full   ">
            <div className='text-center mt-64 text-zinc-700 font-bold'>
               <h3 className="text-4xl  ">Who we are</h3>
               <h1 className="text-4xl"> Designer, Developers & Thinkers </h1>

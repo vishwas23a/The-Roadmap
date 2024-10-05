@@ -6,7 +6,7 @@ export default function Contact() {
   const [visible, setVisible] = useState(true);
   return (
     <>
-      <Navbar />
+    <div className="w-full"><Navbar /></div>  
       <div class="container px-4 mx-auto ">
         <div class="mx-auto mt-10 ">
           <div class="max-w-lg mx-auto px-8 py-6 bg-gray-100 rounded-lg shadow-lg shadow-zinc-700">
