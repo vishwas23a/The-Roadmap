@@ -13,13 +13,14 @@ import reactnativeThumb from "/images/reactnative.png"
 import angularThumb from "/images/angular.png"
 import Navbar from "./Navbar";
 import Card from "./Card";
+import { Outlet } from "react-router-dom";
 
 export default function Page2() {
   const [show, setShow]=useState(true)
 
   return (
     <div  >
-      <div className=""><Navbar/></div>
+
       <div className=" w-full flex justify-around mt-5 font-bold text-2xl text-slate-800">
     <h1 className="cursor-pointer hover:shadow-xl p-3   rounded-2xl   " onClick={()=>setShow(true)}> Languages </h1>
     <h1 className="text-4xl font-semibold">|</h1>
@@ -34,37 +35,37 @@ export default function Page2() {
          Heading="C language"
          message="Learn About C Language "
          thumbnail={cThumb}
-         Go="/Clang"
+         Go="/Navbar/Clang"
           />
         <Card
          Heading="C++"
          message="Learn About C++ Language "
          thumbnail={cPlusThumb}
-         Go="/Cplus"
+         Go="/Navbar/Cplus"
           />
         <Card
          Heading="Java"
          message="Learn About Java Language "
          thumbnail={javaThumb}
-         Go="/Javapage"
+         Go="/Navbar/Javapage"
           />
         <Card
          Heading="Python"
          message="Learn About Python Language "
          thumbnail={pythonThumb}
-         Go="/Python"
+         Go="/Navbar/Python"
           />
         <Card
          Heading="Javascript"
          message="Learn About Javascript Language "
          thumbnail={javascriptThumb}
-         Go="/Javascript"
+         Go="/Navbar/Javascript"
           />
         <Card
          Heading="C Sharp"
          message="Learn About C Sharp Language "
          thumbnail={csharpThumb}
-         Go="/Csharp"
+         Go="/Navbar/Csharp"
           />
 
 
@@ -78,25 +79,25 @@ export default function Page2() {
          Heading="Flutter"
          message="Learn About Flutter Framework"
          thumbnail={flutterThumb}
-         Go="/Flutter"
+         Go="/Navbar/Flutter"
           />
 <Card
          Heading="React"
          message="Learn About React Framework "
          thumbnail={reactThumb}
-         Go="/Reactjs"
+         Go="/Navbar/Reactjs"
           />
 <Card
          Heading="React Native"
          message="Learn About React Native "
          thumbnail={reactnativeThumb}
-         Go="/Reactnative"
+         Go="?Navbar/Reactnative"
           />
 <Card
          Heading="Angular"
          message="Learn About Angular Framework"
          thumbnail={angularThumb}
-         Go="/Angular"
+         Go="/Navbar/Angular"
           />
 
 
@@ -107,7 +108,7 @@ export default function Page2() {
 
      
 
-     
+
     </div>
   );
 }

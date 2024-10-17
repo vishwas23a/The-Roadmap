@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 
 
 function Card(props) {
@@ -7,6 +7,7 @@ function Card(props) {
   return (
    
     <div>
+ 
       
 
 <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg shadow-zinc-500">
@@ -27,6 +28,7 @@ function Card(props) {
     </button></NavLink> 
   </div>
 </div>
+
     </div>
   )
 }

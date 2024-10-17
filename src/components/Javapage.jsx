@@ -1,36 +1,45 @@
 import React from 'react'
 
-import './Javapage.css'
+import LanguageCard from './LanguageCard'
+import backLogo from '/images/left-arrow.png'
+import Youtube from '/images/youtube.png'
+import java from '/images/JavaRoadmap.png'
+import BlogLogo from '/images/blog.png'
 import { saveAs } from 'file-saver'
 const Javapage = () => {
   const downloadJava=()=>{
-let url="./images/JavaRoadmap.png"
+let url="/images/JavaRoadmap.png"
 saveAs(url,"Java Roadmap")
   }
   return (
-    <div>
-      <div className="javahead"> <h1>Java Roadmap</h1></div>
-      <div className="image">  
-      <img src="./images/JavaRoadmap.png" alt="roadmap" />
-      
-      </div>
+   <>
+     <LanguageCard
+    Route="/Navbar"
+    BackLogo={backLogo}
+    download={downloadJava}
+    LangName="Java Language"
+    LangImg={java}
+    Youtube={Youtube}
+    YoutuberName1="Apna College"
+    YoutubeLink1="https://youtu.be/irqbmMNs2Bo?si=qVjMU-jAURUt-feq"
+    YoutuberName2="Code With Harry"
+    YoutubeLink2="https://youtu.be/aZb0iu4uGwA?si=SZ7LSb7UbvgH0dTF"
+    YoutuberName3="freeCodeCamp"
+    YoutubeLink3="https://youtu.be/KJgsSFOSQv0?si=hmpImGFtmEjFvGH3"
+    YoutuberName4="Jenny's Lectures CS IT"
+    YoutubeLink="https://youtube.com/playlist?list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S&si=UG11-hlKTGNrUwmW"
+    BlogLogo={BlogLogo}
+    Blog1="Geek For Geeks"
+    BlogLink1="https://www.geeksforgeeks.org/java/"
+    Blog2="JavatPoint"
+    BlogLink2="https://www.javatpoint.com/java-tutorial"
+    Blog3="W3Schools"
+    BlogLink3="https://www.w3schools.com/java/"
+    Blog4="Programiz"
+    BlogLink4="https://www.programiz.com/java-programming "
 
-      <div className='javabutton'>
-        <button onClick={downloadJava} > Download</button>
-      </div>
-      <div className='javalinks'> 
-      <ul>
-        <li> <img src="./images/youtube.png" alt="" /><a className='a1' href="https://youtube.com/playlist?list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q&si=kKxmHmQIYClTzQ9y" target='blank'> Code With Harry</a></li>
-        <li><img src="./images/youtube.png" alt="" /><a className='a2' href="https://youtube.com/playlist?list=PLWKjhJtqVAbnRT_hue-3zyiuIYj0OlpyG&si=-Xn_ViO6vyKmStQ0" target='blank'> Free Code Camp</a></li>
-
-        <li><img src="./images/youtube.png" alt="" /><a className='a3' href="https://youtube.com/playlist?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop&si=zmeIZliIVqMcFvE0" target=' blank'> Apna College</a></li>
-
-        <li><img src="./images/youtube.png" alt="" /><a  className='a4'href="https://youtube.com/playlist?list=PLd3UqWTnYXOmx_J1774ukG_rvrpyWczm0&si=md2A36c9Gx0kD2tQ" target='blank'> Java By Durga Sir</a></li>
-
-      </ul>
-
-      </div>
-    </div>
+    />
+   </>
   )
 }
 

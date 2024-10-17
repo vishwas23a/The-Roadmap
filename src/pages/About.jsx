@@ -8,7 +8,7 @@ export default function About() {
     
     
         <div>
-           <div className='fixed w-full'><Navbar/></div> 
+         
          
             <img className='fixed  -z-10  opacity-80 w-screen' src={image3} alt="" loading='lazy' /> 
             <div className=" overflow-auto h-max w-full   ">

@@ -50,7 +50,7 @@ export default function Contact() {
   return (
     <>
 
-    <div className="w-full"><Navbar /></div>  
+ 
    
       <div class="container px-4 mx-auto ">
         <div class="mx-auto mt-10 ">

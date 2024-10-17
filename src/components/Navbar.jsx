@@ -1,7 +1,7 @@
 import React from 'react'
 
 import navLogo from '/images/eco-light.png'
-import { NavLink} from 'react-router-dom'
+import { NavLink, Outlet} from 'react-router-dom'
 
 export default function Navbar() {
 
@@ -15,13 +15,14 @@ export default function Navbar() {
     </div>
     <nav>
         <ul class="flex gap-14 cursor-pointer    ">
-          <NavLink to="/ "> <li class="hover:text-zinc-950 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 ">Home </li></NavLink> 
-          <NavLink to="/Page2"> <li class="hover:text-zinc-950 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 ">Roadmaps </li></NavLink> 
-          <NavLink to="/About">    <li class="hover:text-zinc-950 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110">About</li></NavLink>
-          <NavLink to="/Contact">     <li class="hover:text-zinc-950 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110">Feedback</li></NavLink>
+          <NavLink to="/"> <li class="hover:text-zinc-950 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 ">Home </li></NavLink> 
+          <NavLink to="Page2"> <li class="hover:text-zinc-950 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 ">Roadmaps </li></NavLink> 
+          <NavLink to="About">    <li class="hover:text-zinc-950 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110">About</li></NavLink>
+          <NavLink to="Contact">     <li class="hover:text-zinc-950 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110">Feedback</li></NavLink>
         </ul>
     </nav>
   </div>
+  <Outlet/>
     </div>
       
 

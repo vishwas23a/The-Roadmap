@@ -1,6 +1,6 @@
 import React from 'react'
 import './Body.css'
-import {NavLink, useNavigate} from 'react-router-dom'
+import {NavLink, Outlet, useNavigate} from 'react-router-dom'
 import image1 from '/images/RoadBack.jpg'
 
 export default function Body() {
@@ -17,15 +17,15 @@ export default function Body() {
       <ul class="flex gap-6 ">
   
   
-      <NavLink to="/About"><li class="border text-white hover:bg-blue-950 border-white px-3 py-1 rounded-3xl ">About</li></NavLink>  
-      <NavLink to="/Contact"> <li class="px-3 py-1 cursor-pointer text-blue-950 border border-white bg-white rounded-3xl hover:bg-slate-200">Feedback</li></NavLink> 
+      <NavLink to="Navbar/About"><li class="border text-white hover:bg-blue-950 border-white px-3 py-1 rounded-3xl ">About</li></NavLink>  
+      <NavLink to="Navbar/Contact"> <li class="px-3 py-1 cursor-pointer text-blue-950 border border-white bg-white rounded-3xl hover:bg-slate-200">Feedback</li></NavLink> 
       </ul>
      </div>
 
      <div class=" w-full flex flex-col items-center  h-max mt-28">
       <h1 class="text-6xl  text-slate-200"> The Roadmap<br></br> Of Your Future </h1>
       <div class=" mt-10 ">
-<NavLink to="/Page2">
+<NavLink to="Navbar">
 <button
   type="submit"
   class="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
