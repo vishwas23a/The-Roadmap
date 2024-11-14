@@ -4,14 +4,17 @@ import { useState, useEffect } from "react";
 
 function PromptCard(props) {
    const {searchLang}=props
-  const [loader, setLoader] = useState(true);
+  const [loader, setLoader] = useState(false);
 
   const [input, setInput] = useState("");
   const [info, setInfo] = useState("");
   const handleSearch = () => {
     setLoader(true)
     fetchInfo(input);
-  
+    setInput('')
+
+    
+
   };
 
   const fetchInfo = async (request) => {
@@ -21,7 +24,7 @@ function PromptCard(props) {
       });
 
       setInfo(response.data);
-      setInput("");
+
     } catch (error) {
       console.error(error.message);
     } finally {
@@ -37,11 +40,12 @@ function PromptCard(props) {
           placeholder={searchLang}
           className="px-8 py-3 shadow-lg  rounded-lg"
           onChange={(e) => setInput(e.target.value)}
+          value={input}
         />
         <button
           onClick={handleSearch} 
 
-          class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          className="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
           type="button"
         >
           Search
