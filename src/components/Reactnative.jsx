@@ -1,38 +1,48 @@
 import React from 'react'
 import{saveAs} from "file-saver";
+import backLogo from '/images/left-arrow.png'
+import Youtube from '/images/youtube.png'
+import reactNative from '/images/react-native.jpg'
+import BlogLogo from '/images/blog.png'
+import LanguageCard from './LanguageCard'
 
-import './Reactnative.css'
 const Reactnative = () => {
   const downloadReactNative = () => {
 
-   let url= "./images/react-native.jpg"
+   let url= "/images/react-native.jpg"
    saveAs(url,'React-native roadmap');
 }
 
   return (
-    <div>
-      <div className="reactnativehead"> <h1>React-native Roadmap</h1></div>
-      <div className="reactnativeimage">  
-      <img src="./images/react-native.jpg" alt="roadmap" />
-      
-      </div>
+  <div>
+     <LanguageCard
+    Route="/Navbar"
+    BackLogo={backLogo}
+    download={downloadReactNative}
+    LangName="React Native"
+    LangImg={reactNative}
+    Youtube={Youtube}
+    YoutuberName1="Apna College"
+    YoutubeLink1="https://youtu.be/irqbmMNs2Bo?si=qVjMU-jAURUt-feq"
+    YoutuberName2="Code With Harry"
+    YoutubeLink2="https://youtu.be/aZb0iu4uGwA?si=SZ7LSb7UbvgH0dTF"
+    YoutuberName3="freeCodeCamp"
+    YoutubeLink3="https://youtu.be/KJgsSFOSQv0?si=hmpImGFtmEjFvGH3"
+    YoutuberName4="Jenny's Lectures CS IT"
+    YoutubeLink="https://youtube.com/playlist?list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S&si=UG11-hlKTGNrUwmW"
+    BlogLogo={BlogLogo}
+    Blog1="Geek For Geeks"
+    BlogLink1="https://www.geeksforgeeks.org/java/"
+    Blog2="JavatPoint"
+    BlogLink2="https://www.javatpoint.com/java-tutorial"
+    Blog3="W3Schools"
+    BlogLink3="https://www.w3schools.com/java/"
+    Blog4="Programiz"
+    BlogLink4="https://www.programiz.com/java-programming "
+    programLang="React Native "
 
-      <div className='reactnativebutton'>
-        <button  onClick={downloadReactNative }  > Download</button>
-      </div>
-      <div className='reactnativelinks'> 
-      <ul>
-        <li> <img src="./images/youtube.png" alt="" /><a className='a1' href="https://youtube.com/playlist?list=PL8p2I9GklV468O2wk-n8Q1KmtMhnHHj4C&si=Xc_vQIWU2EiDGWzy" target='blank'> Code Step By Step</a></li>
-        <li><img src="./images/youtube.png" alt="" /><a className='a2' href="https://youtu.be/obH0Po_RdWk?si=-cOSlV8kaQDFxN0M" target='blank'> Free Code Camp</a></li>
-
-        <li><img src="./images/youtube.png" alt="" /><a className='a3' href="https://youtube.com/playlist?list=PLRAV69dS1uWSjBBJ-egNNOd4mdblt1P4c&si=eUgkXfC9jUWRVWH-" target=' blank'> Hitesh Choudhary</a></li>
-
-        <li><img src="./images/youtube.png" alt="" /><a  className='a4'href="https://youtube.com/playlist?list=PLS1QulWo1RIb_tyiPyOghZu_xSiCkB1h4&si=SUmS42a6rnsp9MMi" target='blank'> ProgrammingKnowledge</a></li>
-
-      </ul>
-
-      </div>
-    </div>
+    />
+  </div>
   )
 }
 

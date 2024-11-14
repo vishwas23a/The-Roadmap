@@ -1,35 +1,45 @@
 import React from 'react'
 
-import './Python.css'
+
+import LanguageCard from './LanguageCard'
+import backLogo from '/images/left-arrow.png'
+import Youtube from '/images/youtube.png'
+import python from '/images/pythonroadmap.jpg'
+import BlogLogo from '/images/blog.png'
 const Python = () => {
   const downloadPython=()=>{
-    let url="./images/pythonroadmap.jpg"
+    let url="/images/pythonroadmap.jpg"
     saveAs(url,"Python-Roadmap")
   }
   return (
     <div>
-      <div className="pythonhead"> <h1>Python Roadmap</h1></div>
-      <div className="pythonimage">  
-      <img src="./images/pythonroadmap.jpg" alt="roadmap" />
-      
-      </div>
+        <LanguageCard
+    Route="/Navbar"
+    BackLogo={backLogo}
+    download={downloadPython}
+    LangName="Pyhton"
+    LangImg={python}
+    Youtube={Youtube}
+    YoutuberName1="Apna College"
+    YoutubeLink1="https://youtu.be/irqbmMNs2Bo?si=qVjMU-jAURUt-feq"
+    YoutuberName2="Code With Harry"
+    YoutubeLink2="https://youtu.be/aZb0iu4uGwA?si=SZ7LSb7UbvgH0dTF"
+    YoutuberName3="freeCodeCamp"
+    YoutubeLink3="https://youtu.be/KJgsSFOSQv0?si=hmpImGFtmEjFvGH3"
+    YoutuberName4="Jenny's Lectures CS IT"
+    YoutubeLink="https://youtube.com/playlist?list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S&si=UG11-hlKTGNrUwmW"
+    BlogLogo={BlogLogo}
+    Blog1="Geek For Geeks"
+    BlogLink1="https://www.geeksforgeeks.org/java/"
+    Blog2="JavatPoint"
+    BlogLink2="https://www.javatpoint.com/java-tutorial"
+    Blog3="W3Schools"
+    BlogLink3="https://www.w3schools.com/java/"
+    Blog4="Programiz"
+    BlogLink4="https://www.programiz.com/java-programming "
+    programLang="python"
 
-      <div className='pythonbutton'>
-        <button onClick={downloadPython}> Download</button>
-      </div>
-      <div className='pythonlinks'> 
-      <ul>
-        <li> <img src="./images/youtube.png" alt="" /><a  href="https://youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg&si=FY6qlYjaeS2n9mvF" target='blank'> Code With Harry</a></li>
-        <li><img src="./images/youtube.png" alt="" /><a  href="https://youtube.com/playlist?list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB&si=FNBw6btwwrJX-ei-" target='blank'> Free Code Camp</a></li>
-
-        <li><img src="./images/youtube.png" alt="" /><a  href="https://youtu.be/XnSasPR2KJI?si=K4nlwSlmM5dw7Z3Z" target=' blank'> College Wallah</a></li>
-
-        <li><img src="./images/youtube.png" alt="" /><a  href="https://youtube.com/playlist?list=PLjVLYmrlmjGcQfNj_SLlLV4Ytf39f8BF7&si=t2rHHBi5l4quIqmr" target='blank'> WsCube Tech
-</a></li>
-
-      </ul>
-
-      </div>
+    />
     </div>
   )
 }

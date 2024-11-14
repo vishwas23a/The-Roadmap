@@ -1,36 +1,47 @@
 import React from 'react'
 
 
-import './Csharp.css'
+import LanguageCard from './LanguageCard'
+import backLogo from '/images/left-arrow.png'
+import Youtube from '/images/youtube.png'
+import csharp from '/images/JavaRoadmap.png'
+import BlogLogo from '/images/blog.png'
+
 const Csharp = () => {
-  const downloadFlutter =()=>{
-    let url="./images/flutter.jpg"
-    saveAs(url,"Flutter-Roadmap")
+  const downloadCsharp =()=>{
+    let url="/images/JavaRaodmap.png"
+    saveAs(url,"Csharp-Roadmap")
   }
   return (
-    <div>
-      <div className="flutterhead"> <h1>C Sharp Roadmap</h1></div>
-      <div className="flutterimage">  
-      <img src="./images/flutter.jpg" alt="roadmap" />
-      
-      </div>
+<div>
+<LanguageCard
+    Route="/Navbar"
+    BackLogo={backLogo}
+    download={downloadCsharp}
+    LangName="Csharp"
+    LangImg={csharp}
+    Youtube={Youtube}
+    YoutuberName1="Apna College"
+    YoutubeLink1="https://youtu.be/irqbmMNs2Bo?si=qVjMU-jAURUt-feq"
+    YoutuberName2="Code With Harry"
+    YoutubeLink2="https://youtu.be/aZb0iu4uGwA?si=SZ7LSb7UbvgH0dTF"
+    YoutuberName3="freeCodeCamp"
+    YoutubeLink3="https://youtu.be/KJgsSFOSQv0?si=hmpImGFtmEjFvGH3"
+    YoutuberName4="Jenny's Lectures CS IT"
+    YoutubeLink="https://youtube.com/playlist?list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S&si=UG11-hlKTGNrUwmW"
+    BlogLogo={BlogLogo}
+    Blog1="Geek For Geeks"
+    BlogLink1="https://www.geeksforgeeks.org/java/"
+    Blog2="JavatPoint"
+    BlogLink2="https://www.javatpoint.com/java-tutorial"
+    Blog3="W3Schools"
+    BlogLink3="https://www.w3schools.com/java/"
+    Blog4="Programiz"
+    BlogLink4="https://www.programiz.com/java-programming "
+    programLang="Csharp Language"
 
-      <div className='flutterbutton'>
-        <button onClick={downloadFlutter}> Download</button>
-      </div>
-      <div className='flutterlinks'> 
-      <ul>
-        <li> <img src="./images/youtube.png" alt="" /><a className='a1' href="https://youtube.com/playlist?list=PLjVLYmrlmjGfGLShoW0vVX_tcyT8u1Y3E&si=kPuBZVfYrRXpYRaa" target='blank'> WsCube Tech</a></li>
-        <li><img src="./images/youtube.png" alt="" /><a className='a2' href="https://youtube.com/playlist?list=PLlvhNpz1tBvH4Wn8rMjtscK3l2pXnC9aN&si=AkHZxQC6u6xPhRPf" target='blank'> Code With Dhruv</a></li>
-
-        <li><img src="./images/youtube.png" alt="" /><a className='a3' href="https://youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ&si=OHk2Iu49haTZLZ1s" target=' blank'> Net Ninja</a></li>
-
-        <li><img src="./images/youtube.png" alt="" /><a  className='a4'href="https://youtu.be/VPvVD8t02U8?si=97UD8AobM1OIEG8p" target='blank'> Free Code Camp</a></li>
-
-      </ul>
-
-      </div>
-    </div>
+    />
+</div>
   )
 }
 

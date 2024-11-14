@@ -1,10 +1,10 @@
 import React from 'react'
-import './Body.css'
+
 import {NavLink, Outlet, useNavigate} from 'react-router-dom'
 import image1 from '/images/RoadBack.jpg'
 
 export default function Body() {
-    const navigate =useNavigate()
+
   return (
     <div>
       <div class="flex justify-center h-screen w-screen  items-center">

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Page2.css";
+
 import { useState } from "react";
 import cThumb from "/images/c.png"
 import csharpThumb from "/images/csharp.png"
@@ -91,7 +91,7 @@ export default function Page2() {
          Heading="React Native"
          message="Learn About React Native "
          thumbnail={reactnativeThumb}
-         Go="?Navbar/Reactnative"
+         Go="/Navbar/Reactnative"
           />
 <Card
          Heading="Angular"

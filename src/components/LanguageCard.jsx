@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
+import PromptCard from "./PromptCard";
 
 function LanguageCard(props) {
   const { LangImg, LangName, download,Youtube,YoutubeLink1,YoutubeLink2 , YoutubeLink3,YoutubeLink4,YoutuberName1 , YoutuberName2,YoutuberName3,YoutuberName4,Blog1,BlogLink1,
-    BlogLink2,BlogLink3,BlogLink4,Blog2,Blog3,Blog4,BlogLogo,BackLogo,Route } = props;
+    BlogLink2,BlogLink3,BlogLink4,Blog2,Blog3,Blog4,BlogLogo,BackLogo,Route,programLang } = props;
   const [view, setView] = useState(true);
   return (
     <>
@@ -47,7 +48,13 @@ function LanguageCard(props) {
               </div>
             </div>
           ) : (
-            <div>info</div>
+            <div className="p-10  w-full h-screen border-2">
+              <div className="h-full overflow-auto w-full ">
+            <PromptCard 
+             langname={programLang}
+            />
+</div>
+            </div>
           )}
         </div>
 
