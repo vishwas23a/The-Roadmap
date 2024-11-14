@@ -15,14 +15,14 @@ export default function Contact() {
   });
 
   useEffect(()=>{
-    axios.get("http://localhost:2001/info")
+    axios.get("https://theroadmap-backend-1.onrender.com/info")
     .then((res)=>setFeedData(res.data))
   })
 
 
   const send=(e)=>{
     e.preventDefault()
-    axios.post('http://localhost:2001/info',data)
+    axios.post('https://theroadmap-backend-1.onrender.com/info',data)
     .then(res=>{
       console.log(res);
       toast("Feedback sent")

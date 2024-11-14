@@ -19,7 +19,7 @@ function PromptCard(props) {
 
   const fetchInfo = async (request) => {
     try {
-      const response = await axios.post("http://localhost:2001/getData", {
+      const response = await axios.post("https://theroadmap-backend-1.onrender.com/getData", {
         request: request,
       });
 
