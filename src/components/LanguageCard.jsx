@@ -51,7 +51,7 @@ function LanguageCard(props) {
             <div className="p-10  w-full h-screen border-2">
               <div className="h-full overflow-auto w-full ">
             <PromptCard 
-             langname={programLang}
+             searchLang={programLang}
             />
 </div>
             </div>

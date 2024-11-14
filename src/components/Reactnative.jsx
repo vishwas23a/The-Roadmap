@@ -39,7 +39,7 @@ const Reactnative = () => {
     BlogLink3="https://www.w3schools.com/java/"
     Blog4="Programiz"
     BlogLink4="https://www.programiz.com/java-programming "
-    programLang="React Native "
+    programLang="Search about React Native "
 
     />
   </div>

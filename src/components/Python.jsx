@@ -37,7 +37,7 @@ const Python = () => {
     BlogLink3="https://www.w3schools.com/java/"
     Blog4="Programiz"
     BlogLink4="https://www.programiz.com/java-programming "
-    programLang="python"
+    programLang="Search about Python"
 
     />
     </div>
