@@ -17,7 +17,7 @@ export default function Contact() {
   useEffect(()=>{
     axios.get("https://theroadmap-backend-1.onrender.com/info")
     .then((res)=>setFeedData(res.data))
-  },[])
+  },[data])
 
 
   const send=(e)=>{
