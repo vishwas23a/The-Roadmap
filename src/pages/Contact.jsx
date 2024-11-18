@@ -17,7 +17,7 @@ export default function Contact() {
   useEffect(()=>{
     axios.get("https://theroadmap-backend-1.onrender.com/info")
     .then((res)=>setFeedData(res.data))
-  })
+  },[])
 
 
   const send=(e)=>{
@@ -25,6 +25,7 @@ export default function Contact() {
     axios.post('https://theroadmap-backend-1.onrender.com/info',data)
     .then(res=>{
       console.log(res);
+      
       toast("Feedback sent")
       setData(
         {
@@ -37,7 +38,7 @@ export default function Contact() {
 
       
     })
-    console.log(data.name);
+  
     
   }
   const handleChange=(e)=>{
