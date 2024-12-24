@@ -4,7 +4,7 @@ import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import Navbar from "../components/Navbar";
+
 export default function Contact() {
   const [visible, setVisible] = useState(true);
   const [feedData,setFeedData]=useState([])
