@@ -13,12 +13,12 @@ export default function Body() {
           alt="Background" 
           loading='lazy' 
         />
-        <div className="h-11/12 w-11/12 bg-slate-50 border border-white bg-opacity-15 rounded-2xl z-10 my-4 md:my-8 flex flex-col"> 
+        <div className="h-11/12 w-11/12 bg-slate-50 border border-white bg-opacity-10 rounded-2xl z-10 my-4 md:my-8 flex flex-col"> 
           <div className="px-4 md:px-8 pt-4 md:pt-6 text-white flex flex-col sm:flex-row justify-between gap-4 sm:gap-0">
             <div>
-            <img src={logo} alt="" className="h-12 w-12" style={{ filter: 'invert(1)' }} />
+            <img src={logo} alt="" className="h-12 mx-auto w-12 " style={{ filter: 'invert(1)' }} />
             </div>
-            <ul className="flex justify-center sm:justify-end gap-4 md:gap-6">
+            <ul className="flex z-20 justify-center sm:justify-end gap-4 md:gap-6">
               <NavLink to="Navbar/About">
                 <li className="border text-white hover:bg-blue-950 border-white px-3 py-1 rounded-3xl text-sm md:text-base">
                   About
