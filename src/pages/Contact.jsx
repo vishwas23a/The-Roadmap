@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./Contact.css";
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -53,10 +52,10 @@ export default function Contact() {
 
  
    
-      <div class="container px-4 mx-auto ">
-        <div class="mx-auto mt-10 ">
+      <div class="container px-4 flex w-full justify-center  absolute mt-20  ">
+        <div class="w-full  ">
       
-          <div class="max-w-lg mx-auto px-8 py-6 bg-gray-100 rounded-lg shadow-lg shadow-zinc-700">
+          <div class="max-w-lg  mx-auto px-8 py-6 bg-gray-100 rounded-lg shadow-lg shadow-zinc-700">
             <div className="flex w-full justify-between">
   
               <h2

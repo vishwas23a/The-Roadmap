@@ -19,12 +19,12 @@ export default function Page2() {
   const [show, setShow]=useState(true)
 
   return (
-    <div  >
+    <div className=" absolute mt-20"  >
 
-      <div className=" w-full flex justify-around mt-5 font-bold text-2xl text-slate-800">
-    <h1 className="cursor-pointer hover:shadow-xl p-3   rounded-2xl   " onClick={()=>setShow(true)}> Languages </h1>
+      <div className=" w-full flex justify-around  font-bold text-2xl text-slate-800">
+    <h1 className="cursor-pointer hover:shadow-xl p-2 drop-shadow shadow-inner shadow-zinc-400  border-2  rounded-2xl   " onClick={()=>setShow(true)}> Languages </h1>
     <h1 className="text-4xl font-semibold">|</h1>
-    <h1 className="cursor-pointer hover:shadow-xl p-3   rounded-2xl   " onClick={()=>setShow(false)}> Frameworks</h1>
+    <h1 className="cursor-pointer hover:shadow-xl p-2 drop-shadow shadow-inner shadow-zinc-400  border-2  rounded-2xl   " onClick={()=>setShow(false)}> Frameworks</h1>
 
       </div>
       {
