@@ -84,9 +84,9 @@ function LanguageCard({
           </div>
         </div>
       ) : (
-        <div className="px-4 sm:px-6 md:px-8">
+        <div className="px-2 sm:px-6 md:px-8">
           <div className="h-[calc(100vh-250px)] border-2 rounded-lg overflow-hidden">
-            <div className="h-full overflow-auto">
+            <div className="h-full  overflow-auto">
               <PromptCard searchLang={programLang} />
             </div>
           </div>
